@@ -3,7 +3,7 @@ package com.escola.eventos.controller;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.data.mongodb.core.aggregation.Aggregation;
-import org.springframework.data.mongodb.core.mapping.Document;
+import org.bson.Document;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -45,7 +45,7 @@ public class EstatisticaController {
 
         return mongoT.aggregate(
                 notas,
-                "notas",
+                "avaliacoes",
                 Document.class
         ).getMappedResults();
     }
@@ -64,7 +64,7 @@ public class EstatisticaController {
 
         return mongoT.aggregate(
                 categorias,
-                "categorias",
+                "eventos",
                 Document.class
         ).getMappedResults();
     }

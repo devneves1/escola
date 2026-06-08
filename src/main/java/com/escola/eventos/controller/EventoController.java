@@ -33,7 +33,7 @@ public class EventoController {
         return ResponseEntity.status(HttpStatus.CREATED).body(criado);
     }
 
-    @PostMapping
+    @PutMapping
     public ResponseEntity<Evento> atualizarEvento(@PathVariable String id, @RequestBody Evento evento){
         evento.setId(id);
         Evento atualizado = eventoR.save(evento);

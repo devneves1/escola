@@ -1,5 +1,9 @@
 # Sistema de Gerenciamento de Eventos Escolares
 
+## Integrantes:
+Daniel Batista Queiroz das neves 04198142
+Otávio Vinicius Feio Figueiredo 04182659
+
 ## Descrição do Sistema
 
 Sistema desenvolvido para gerenciar eventos realizados em uma comunidade escolar. A aplicação permite o cadastro e gerenciamento de eventos, usuários, categorias, comentários, avaliações, inscrições, locais, organizadores, notificações e patrocinadores. O sistema foi construído como uma API REST utilizando **Java com Spring Boot** e banco de dados **NoSQL MongoDB Atlas**.
